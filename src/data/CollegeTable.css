@@ -1,0 +1,193 @@
+/* College Table Styles */
+.college-table-container {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 60px); /* Adjust the height to leave space for the footer */
+}
+
+.search-input {
+  width: 50%;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  margin-left: 28%;
+
+}
+
+.college-table {
+  width: 100%;
+  margin: auto;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 28px; /* Adjust font size */
+  flex-grow: 1; /* Allow the table to grow and push the footer to the bottom */
+}
+
+.college-table th,
+.college-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.college-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  border-right: 1px solid #ccc;
+}
+
+.college-table th:last-child {
+  border-right: none; /* Remove vertical line for the last table header */
+}
+
+.college-table td {
+  border-right: 1px solid #ccc; /* Add vertical line between table cells */
+}
+
+.college-table td:last-child {
+  border-right: none; /* Remove vertical line for the last cell in each row */
+}
+
+.college-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.sortable-column {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sort-icon {
+  font-size: 12px;
+  margin-left: 4px;
+}
+
+.sort-icon.asc {
+  color: #4caf50;
+}
+
+.sort-icon.desc {
+  color: #f44336;
+}
+
+.featured-label {
+  background-color: #4caf50;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.ranking-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.ranking-value {
+  font-weight: bold;
+}
+
+.user-review-rating {
+  color: #ffa500;
+  font-weight: bold;
+}
+
+.user-review-count {
+  color: #666;
+}
+
+.placement-salary {
+  font-weight: bold;
+}
+
+.placement-recruiter {
+  color: #666;
+}
+
+.loader {
+  text-align: center;
+  padding: 12px 0;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.loading-message {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.footer {
+  background-color: #f2f2f2;
+  padding: 16px;
+  text-align: center;
+  margin-top: 16px;
+}
+
+/* New styles for course info */
+.college-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.college-name {
+  padding: 4px 8px; /* Adjust padding */
+  border-radius: 4px; /* Rounded corners */
+  margin-bottom: 4px; /* Add margin */
+}
+
+.course-info {
+  font-size: 14px; /* Adjust font size */
+  color: #853030; /* Dark gray text color */
+  padding: 8px 8px 8px 12px; /* Adjust padding */
+  background-color: #ffffcc; /* Yellow background */
+  width: 30%; /* Adjust width */
+}
+
+.course-fees {
+  color: #2ecc71; /* Greenish color */
+}
+
+.placement {
+  color: #2ecc71; /* Greenish color */
+}
+
+/* Add CSS for the Featured flag */
+.featured-banner {
+  position: relative;
+  display: inline-block;
+  background-image: url(https://images.collegedunia.com/public/asset/img/featured-flag.svg); /* Image link */
+  background-size: contain; /* Make sure the image fits the container */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  width: 120px; /* Width of the banner */
+  height: 21px; /* Height of the banner */
+  margin-right: 8px; /* Add spacing between the flag and college name */
+  font-size: 20px;
+  margin-left: 14px;
+
+
+}
+
+.featured{
+  margin-left: 15%;
+  color: white;
+}
+
+.featured-college-row {
+  background-color: #ffe6e6; /* Change the background color for featured colleges */
+}
+
